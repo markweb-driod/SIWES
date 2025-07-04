@@ -1,0 +1,46 @@
+# Security headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# Prevent access to sensitive files
+<Files "*.php">
+    <RequireAll>
+        Require all granted
+    </RequireAll>
+</Files>
+
+# Protect backend directory
+<Files "backend/config/*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Allow access to API endpoints
+<Files "backend/api/*.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Redirect to index.php for non-existent files
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+
+# Prevent access to .htaccess
+<Files ".htaccess">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Prevent access to README and other sensitive files
+<Files "README.md">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+<Files "setup_database.php">
+    Order Deny,Allow
+    Deny from all
+</Files> 
