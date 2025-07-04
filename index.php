@@ -729,32 +729,32 @@ if (isset($_SESSION['user_id'])) {
     <!-- Enhanced Header -->
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
+        <div class="container">
+            <a class="navbar-brand" href="#">
                     <img src="assets/images/logo.jpg" alt="NSUK Logo">
                     SIWES Logbook
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
                             <a class="nav-link" href="features.php">Features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.php">About</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a class="nav-link" href="contact.php">Contact</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a class="nav-link" href="student/login.php">Student Login</a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
 
     <!-- Enhanced Hero Section -->
@@ -765,14 +765,14 @@ if (isset($_SESSION['user_id'])) {
             <div class="floating-element"></div>
         </div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
                     <div class="hero-content slide-in-left">
                         <h1 class="hero-title">
                             SIWES Electronic<br>
                             <span class="highlight">Logbook System</span>
                         </h1>
-                        <p class="hero-subtitle">
+                    <p class="hero-subtitle">
                             Experience the future of industrial training documentation. Track your progress, 
                             capture real-time location data, and maintain comprehensive records with our 
                             advanced electronic logbook system designed for Nasarawa State University.
@@ -792,7 +792,7 @@ if (isset($_SESSION['user_id'])) {
                 <div class="col-lg-6">
                     <div class="hero-image-container slide-in-right" style="animation-delay: 0.2s;">
                         <img src="assets/images/lander.png" alt="SIWES Electronic Logbook" class="hero-image">
-                    </div>
+            </div>
                 </div>
             </div>
         </div>
@@ -898,7 +898,7 @@ if (isset($_SESSION['user_id'])) {
                                 <div class="login-card fade-in-up">
                                     <div class="login-icon">
                                         <i class="fas fa-user-graduate"></i>
-                                    </div>
+                            </div>
                                     <h5 class="login-title">Student</h5>
                                     <p class="login-description">
                                         Access your SIWES logbook and track your industrial training progress with real-time updates
@@ -908,7 +908,7 @@ if (isset($_SESSION['user_id'])) {
                                         Login
                                     </a>
                                 </div>
-                            </div>
+                                </div>
                             <div class="col-md-4">
                                 <div class="login-card fade-in-up" style="animation-delay: 0.2s;">
                                     <div class="login-icon">
@@ -991,8 +991,8 @@ if (isset($_SESSION['user_id'])) {
                 <div class="row">
                     <div class="col-md-6">
                         <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0;">
-                            &copy; <?php echo date('Y'); ?> SIWES Logbook System. All rights reserved.
-                        </p>
+                        &copy; <?php echo date('Y'); ?> SIWES Logbook System. All rights reserved.
+                    </p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0;">
