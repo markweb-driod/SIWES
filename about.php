@@ -464,7 +464,7 @@ require_once 'backend/config/session.php';
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="assets/images/nsuk-logo.png" alt="NSUK Logo">
+                    <img src="assets/images/logo.jpg" alt="NSUK Logo">
                     SIWES Logbook
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -553,7 +553,7 @@ require_once 'backend/config/session.php';
         <div class="container">
             <div class="university-card">
                 <div class="university-logo">
-                    <img src="assets/images/nsuk-logo.png" alt="NSUK Logo">
+                    <img src="assets/images/logo.jpg" alt="NSUK Logo">
                 </div>
                 <h2 class="university-title">Nasarawa State University, Keffi</h2>
                 <p class="university-subtitle">Excellence in Education and Innovation</p>

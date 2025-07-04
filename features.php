@@ -433,7 +433,7 @@ require_once 'backend/config/session.php';
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="assets/images/nsuk-logo.png" alt="NSUK Logo">
+                    <img src="assets/images/logo.jpg" alt="NSUK Logo">
                     SIWES Logbook
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

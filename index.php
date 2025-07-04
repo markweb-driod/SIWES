@@ -195,15 +195,16 @@ if (isset($_SESSION['user_id'])) {
         
         .hero-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
             margin-bottom: 3rem;
+            align-items: center;
         }
         
         .btn-hero {
-            padding: 1.2rem 2.5rem;
+            padding: 1rem 2rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             border-radius: 50px;
             border: none;
             transition: all 0.4s ease;
@@ -212,8 +213,10 @@ if (isset($_SESSION['user_id'])) {
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             box-shadow: var(--shadow-medium);
+            min-width: 160px;
+            justify-content: center;
         }
         
         .btn-primary-hero {
@@ -323,7 +326,7 @@ if (isset($_SESSION['user_id'])) {
         }
         
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2rem, 4vw, 3.5rem);
             font-weight: 900;
             color: var(--nsuk-primary);
             text-align: center;
@@ -344,7 +347,7 @@ if (isset($_SESSION['user_id'])) {
         }
         
         .section-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
             text-align: center;
             margin-bottom: 4rem;
@@ -407,7 +410,7 @@ if (isset($_SESSION['user_id'])) {
         }
         
         .feature-title {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 800;
             color: var(--nsuk-primary);
             margin-bottom: 1rem;
@@ -417,8 +420,8 @@ if (isset($_SESSION['user_id'])) {
         .feature-description {
             color: var(--text-secondary);
             text-align: center;
-            line-height: 1.7;
-            font-size: 1.05rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
         }
         
         /* Enhanced Stats Section */
@@ -540,7 +543,7 @@ if (isset($_SESSION['user_id'])) {
         }
         
         .login-title {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 800;
             color: var(--nsuk-primary);
             margin-bottom: 0.5rem;
@@ -549,8 +552,8 @@ if (isset($_SESSION['user_id'])) {
         .login-description {
             color: var(--text-secondary);
             margin-bottom: 2rem;
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
         
         .btn-login {
@@ -679,16 +682,17 @@ if (isset($_SESSION['user_id'])) {
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
             
             .btn-hero {
-                padding: 1rem 2rem;
-                font-size: 1rem;
+                padding: 0.875rem 1.5rem;
+                font-size: 0.9rem;
+                min-width: 140px;
             }
             
             .feature-card {
-                padding: 2.5rem 1.5rem;
+                padding: 2rem 1.5rem;
             }
             
             .login-card {
@@ -701,7 +705,7 @@ if (isset($_SESSION['user_id'])) {
             }
             
             .stat-number {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
         }
         
@@ -709,12 +713,14 @@ if (isset($_SESSION['user_id'])) {
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 1rem;
             }
             
             .btn-hero {
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
                 justify-content: center;
+                padding: 0.875rem 1.5rem;
             }
         }
     </style>
@@ -725,7 +731,7 @@ if (isset($_SESSION['user_id'])) {
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/nsuk-logo.png" alt="NSUK Logo">
+                    <img src="assets/images/logo.jpg" alt="NSUK Logo">
                     SIWES Logbook
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

@@ -323,7 +323,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'student') {
                 <div class="login-container fade-in-up">
                     <div class="login-header">
                         <div class="university-logo">
-                            <img src="../assets/images/nsuk-logo.png" alt="NSUK Logo" style="width: 50px; height: auto;">
+                            <img src="../assets/images/logo.jpg" alt="NSUK Logo" style="width: 50px; height: auto;">
                         </div>
                         <h2>Student Login</h2>
                         <p>Access your SIWES logbook</p>
